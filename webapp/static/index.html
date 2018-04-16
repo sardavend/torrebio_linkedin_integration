@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://unpkg.com/vue"></script> 
+    <!-- <title>Hello My name is {{ profileName }} a </title> -->
+    <title>Hello My name is  a </title>
+    <link rel="stylesheet" href="css/vendor/torre_bio.css">
+    <link id="md-theme-grey900" rel="stylesheet" href="css/vendor/grey_theme.css">
+        <!-- <style type="text/css" id="md-theme-grey900">
+        </style> -->
+
+    
+
+</head>
+<body>
+ <!-- <div class="bio-drawer"><div tabindex="0" class="md-sidenav md-left tdl-drawer md-theme-grey900 md-active drawer-light"> -->
+<div id="app">
+ <div class="bio-drawer">
+  <div tabindex="0"  v-bind:class="{ 'md-active': isActive }" class="md-sidenav md-left tdl-drawer md-theme-grey900 drawer-light">
+     <div class="md-sidenav-content">
+      <header style="background-image: url(&quot;/static/media/background-drawer.6ee78eb.png&quot;);">
+        <div class="md-whiteframe md-whiteframe-2dp">
+          <div class="md-toolbar md-theme-white">
+            <a href="#/" class="md-primary">
+              <img alt="logo" src="img/logos/logo_bio.png" class="tdl-brand-logo">
+            </a>
+          </div>
+        </div> 
+        <div class="tdl-avatar">
+          <img src="https://starrgate.s3.amazonaws.com:443/users/076c484d7cd73d179588626f9da80dd7723eeaba/profile_KhKitFI.jpg" class="tdl-placeholder">
+          <div class="tdl-user-name">Juan Carlos Sardin Avendaño</div> 
+          <div>sardavend@gmail.com</div>
+        </div>
+      </header> 
+      <div class="tdl-drawer-options"><ul class="md-list md-theme-grey900"><!----> <div><!----> <li class="md-list-item highlighted"><div class="md-list-item-container"><!----> <i aria-hidden="true" class="md-icon md-theme-grey900 mdi mdi-account-card-details"></i> <span class="md-body-1">Your bio</span> <!----></div></li><li class="md-list-item"><div class="md-list-item-container"><!----> <i aria-hidden="true" class="md-icon md-theme-grey900 mdi mdi-weight"></i> <span class="md-body-1">Get recommended</span> <hr class="md-divider"></div></li><li class="md-list-item"><div class="md-list-item-container"><!----> <i aria-hidden="true" class="md-icon md-theme-grey900 mdi mdi-lightbulb-on-outline"></i> <span class="md-body-1">Request features</span> <!----></div></li><li class="md-list-item"><div class="md-list-item-container"><i aria-hidden="true" class="md-icon md-theme-grey900 material-icons">code</i> <!----> <span class="md-body-1">API for developers</span> <!----></div></li><li class="md-list-item"><div class="md-list-item-container"><i aria-hidden="true" class="md-icon md-theme-grey900 material-icons">help</i> <!----> <span class="md-body-1">Help</span> <!----></div></li></div> <div><hr class="md-divider"> <li class="md-list-item"><a href="https://accounts.torre.co/user/update/" target="_blank" class="md-list-item-container md-button"><i aria-hidden="true" class="md-icon md-theme-grey900 material-icons">person</i> <span class="md-body-1">Your account</span></a> <div class="md-ink-ripple"><div class="md-ripple" style="width: 304px; height: 304px;"></div></div></li> <li class="md-list-item"><a href="#" class="md-list-item-container md-button"><i aria-hidden="true" class="md-icon mdi mdi-logout-variant md-theme-grey900 material-icons"></i> <span class="md-body-1">Sign out</span></a> <div class="md-ink-ripple"><div class="md-ripple" style="width: 304px; height: 304px;"></div></div></li></div></ul></div> <div class="tdl-spacer"></div> <footer><div class="tdl-footer-links"><a href="https://torre.co/" target="_blank" class="md-primary"><small>About us</small></a>&nbsp;&nbsp;&nbsp;
+      <a href="https://accounts.torre.co/terms/" target="_blank" class="md-primary"><small>Terms of use</small></a>&nbsp;&nbsp;&nbsp;
+       <a href="https://accounts.torre.co/privacy/" target="_blank" class="md-primary"><small>Privacy policy</small></a></div> <div class="tdl-footer-copy"><small>© Torre Technologies Co.</small></div></footer></div> <div class="md-backdrop md-sidenav-backdrop"></div></div></div>
+  <div class="md-whiteframe md-large md-whiteframe-1dp">
+      <div class="md-toolbar md-theme-light">
+          <div class="md-toolbar-container" >
+              <button type="button" class="md-button md-icon-button md-theme-light" v-on:click="isActive = !isActive"> 
+                  <i aria-hidden="true" class="md-icon md-theme-light material-icons">menu</i>
+                  <div class="md-ink-ripple">
+                      <div class="md-ripple md-fadeout md-active" style="width: 40px; height: 40px; top: 9px; left: 5px;">
+
+                      </div></div></button> <div class="tdl-brand-logo-wrapper brand-logo-wrapper">
+                          <a href=""><img src="data:image/png;base64,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" class="tdl-brand-logo"></a></div> <div data-v-57255d32="" class="json-switch"><span data-v-57255d32="" class="json-switch__label" style="color: rgb(33, 33, 33);">{JSON}</span> <div data-v-57255d32="" class="md-switch md-primary json-switch__action md-theme-grey900"><div class="md-switch-container"><div class="md-switch-thumb" style="transform: translate3d(-1px, -50%, 0px);"><input type="checkbox" tabindex="-1" value="false"> <button type="button" class="md-switch-holder"></button> <div class="md-ink-ripple"><div class="md-ripple md-fadeout md-active" style="width: 20px; height: 20px; top: -17.5px; left: -18px;"></div></div></div></div> <!----></div></div> <!----></div></div> <!----></div>
+
+
+                          <button type="button" class="md-button md-primary md-raised md-theme-grey900" v-on:click="getProfile"> 
+                            Get Linkedin Profile
+                            <div class="md-ink-ripple" >
+                              <div class="md-ripple" style="width: 172px; height: 172px;">
+                                
+                              </div>
+                            </div>
+                          </button>
+
+
+
+
+</div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

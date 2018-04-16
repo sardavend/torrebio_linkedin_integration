@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script>  -->
+    <title>Hello My name is {{ profile_info["firstName"] + " " + profile_info['lastName']}}</title>
+    <link rel="stylesheet" href="css/vendor/torre_bio.css">
+    <!-- <link id="md-theme-grey900" rel="stylesheet" href="css/vendor/grey_theme.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-teal.min.css" />
+    <!-- <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script> -->
+        <!-- <style type="text/css" id="md-theme-grey900">
+        </style> -->
+</head>
+<body>
+ <!-- <div class="bio-drawer"><div tabindex="0" class="md-sidenav md-left tdl-drawer md-theme-grey900 md-active drawer-light"> -->
+<div id="torre_linkedin_app">
+ <div class="bio-drawer"><div tabindex="0"  v-bind:class="md-active: isActive" class="md-sidenav md-left tdl-drawer md-theme-grey900 drawer-light">
+     <div class="md-sidenav-content"><header style="background-image: url(&quot;/static/media/background-drawer.6ee78eb.png&quot;);"><div class="md-whiteframe md-whiteframe-2dp"><div class="md-toolbar md-theme-white"><a href="/sardavend" class="md-primary"><img alt="logo" src=".img/logos/logo_bio.jpg" class="tdl-brand-logo"></a></div></div> <div class="tdl-avatar"><img src="https://starrgate.s3.amazonaws.com:443/users/076c484d7cd73d179588626f9da80dd7723eeaba/profile_KhKitFI.jpg" class="tdl-placeholder"> <div class="tdl-user-name">Juan Carlos Sardin Avendaño</div> <div>sardavend@gmail.com</div></div></header> <div class="tdl-drawer-options"><ul class="md-list md-theme-grey900"><!----> <div><!----> <li class="md-list-item highlighted"><div class="md-list-item-container"><!----> <i aria-hidden="true" class="md-icon md-theme-grey900 mdi mdi-account-card-details"></i> <span class="md-body-1">Your bio</span> <!----></div></li><li class="md-list-item"><div class="md-list-item-container"><!----> <i aria-hidden="true" class="md-icon md-theme-grey900 mdi mdi-weight"></i> <span class="md-body-1">Get recommended</span> <hr class="md-divider"></div></li><li class="md-list-item"><div class="md-list-item-container"><!----> <i aria-hidden="true" class="md-icon md-theme-grey900 mdi mdi-lightbulb-on-outline"></i> <span class="md-body-1">Request features</span> <!----></div></li><li class="md-list-item"><div class="md-list-item-container"><i aria-hidden="true" class="md-icon md-theme-grey900 material-icons">code</i> <!----> <span class="md-body-1">API for developers</span> <!----></div></li><li class="md-list-item"><div class="md-list-item-container"><i aria-hidden="true" class="md-icon md-theme-grey900 material-icons">help</i> <!----> <span class="md-body-1">Help</span> <!----></div></li></div> <div><hr class="md-divider"> <li class="md-list-item"><a href="https://accounts.torre.co/user/update/" target="_blank" class="md-list-item-container md-button"><i aria-hidden="true" class="md-icon md-theme-grey900 material-icons">person</i> <span class="md-body-1">Your account</span></a> <div class="md-ink-ripple"><div class="md-ripple" style="width: 304px; height: 304px;"></div></div></li> <li class="md-list-item"><a href="#" class="md-list-item-container md-button"><i aria-hidden="true" class="md-icon mdi mdi-logout-variant md-theme-grey900 material-icons"></i> <span class="md-body-1">Sign out</span></a> <div class="md-ink-ripple"><div class="md-ripple" style="width: 304px; height: 304px;"></div></div></li></div></ul></div> <div class="tdl-spacer"></div> <footer><div class="tdl-footer-links"><a href="https://torre.co/" target="_blank" class="md-primary"><small>About us</small></a>&nbsp;&nbsp;&nbsp;
+      <a href="https://accounts.torre.co/terms/" target="_blank" class="md-primary"><small>Terms of use</small></a>&nbsp;&nbsp;&nbsp;
+       <a href="https://accounts.torre.co/privacy/" target="_blank" class="md-primary"><small>Privacy policy</small></a></div> <div class="tdl-footer-copy"><small>© Torre Technologies Co.</small></div></footer></div> <div class="md-backdrop md-sidenav-backdrop"></div></div></div>
+        <div class="md-whiteframe md-large md-whiteframe-1dp">
+            <div class="md-toolbar md-theme-light">
+                <div class="md-toolbar-container">
+                    <button type="button" class="md-button md-icon-button md-theme-light"> 
+                        <i aria-hidden="true" class="md-icon md-theme-light material-icons">menu</i>
+                        <div class="md-ink-ripple">
+                            <div class="md-ripple md-fadeout md-active" style="width: 40px; height: 40px; top: 9px; left: 5px;">
+
+                            </div></div>
+                    </button> 
+                    <div class="tdl-brand-logo-wrapper brand-logo-wrapper">
+                      <a href="">
+                          <img src="img/logos/logo_bio.png" class="tdl-brand-logo">
+                      </a>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+                          <div class="cover-bar-wrapper">
+                            <div class="fake-cover-bar" style="height: 270px;"></div> 
+                            <div class="cover-bar" style="transform: translateY(0px); height: 270px;">
+                              <div class="cover-bar__content">
+                                <div class="cover-bar__scrim"></div> 
+                                <img src="https://starrgate.s3.amazonaws.com:443/users/076c484d7cd73d179588626f9da80dd7723eeaba/profile_KhKitFI.jpg" class="cover-bar__image">
+                                <div class="cover-bar__container" style="">
+                                  <div class="cover-bar__share">
+                                    <i aria-hidden="true" class="md-icon md-primary md-theme-grey900 material-icons">share</i>
+                                  </div> 
+                                  <img title="Edit" src={{profile_info["pictureUrl"]}} class="cover-bar__avatar" style="border-color: rgb(33, 33, 33); cursor: pointer;">
+                                </div> 
+                                <div>
+                                  <div class="md-tabs md-transparent cover-bar__tabs md-theme-grey900">
+                                    <nav id="tabs-navigation" class="md-tabs-navigation cover-bar__tabs-navigation">
+                                      <button id="tab-about" type="button" class="md-button md-primary md-tab-header cover-bar__tab-header md-active"> 
+                                        <div class="md-tab-header-container">
+                                          <span style="color: rgb(33, 33, 33);">About</span>
+                                        </div>
+                                        <div class="md-ink-ripple">
+                                          <div class="md-ripple md-fadeout md-active" style="width: 73px; height: 73px; top: 1143.5px; left: -3.64062px;">
+                                            
+                                          </div>
+                                        </div>
+                                      </button>
+                                      <button id="tab-strengths" type="button" class="md-button md-primary md-tab-header cover-bar__tab-header"> 
+                                        <div class="md-tab-header-container"><span style="color: rgb(33, 33, 33);">Strengths and skills</span></div>
+                                        <div class="md-ink-ripple">
+                                          <div class="md-ripple md-fadeout md-active" style="width: 190px; height: 190px; top: -77px; left: -19.6406px;">
+                                            
+                                          </div>
+                                        </div>
+                                      </button>
+                                      <button id="tab-jobs" type="button" class="md-button md-primary md-tab-header cover-bar__tab-header">
+                                       <div class="md-tab-header-container"><span style="color: rgb(33, 33, 33);">Jobs</span>
+                                       </div>
+                                       <div class="md-ink-ripple">
+                                        <div class="md-ripple md-fadeout md-active" style="width: 72px; height: 72px; top: 140px; left: -20.3594px;">
+                                          
+                                        </div>
+                                      </div>
+                                      </button>
+                                      <button id="tab-projects" type="button" class="md-button md-primary md-tab-header cover-bar__tab-header"> 
+                                        <div class="md-tab-header-container">
+                                          <span style="color: rgb(33, 33, 33);">Projects</span>
+                                        </div>
+                                        <div class="md-ink-ripple">
+                                          <div class="md-ripple md-fadeout md-active" style="width: 92px; height: 92px; top: 2159px; left: -1.15625px;">
+                                            
+                                          </div>
+                                        </div>
+                                      </button>
+                                      <button id="tab-education" type="button" class="md-button md-primary md-tab-header cover-bar__tab-header">
+                                       <div class="md-tab-header-container"><span style="color: rgb(33, 33, 33);">Education</span></div>
+                                       <div class="md-ink-ripple">
+                                        <div class="md-ripple md-fadeout md-active" style="width: 105px; height: 105px; top: 3093.5px; left: 2.79688px;">
+                                          
+                                        </div>
+                                      </div>
+                                    </button>
+                                    <button id="tab-interests" type="button" class="md-button md-primary md-tab-header cover-bar__tab-header"> 
+                                      <div class="md-tab-header-container"><span style="color: rgb(33, 33, 33);">Interests</span></div>
+                                      <div class="md-ink-ripple">
+                                        <div class="md-ripple md-fadeout md-active" style="width: 97px; height: 97px; top: 3435.5px; left: -8.82812px;">
+                                          
+                                        </div>
+                                      </div>
+                                    </button> 
+                                    <span class="md-tab-indicator cover-bar__tab-indicator" style="left: 0px; width: 74px;"></span>
+                                  </nav>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+                          <div  id="profile-content" class="">
+                            <div class="about-container">
+                              <div  class="md-layout wrapper">
+                                <section class="container">
+                                  <div  class="md-card ">
+                                    <div  class="md-card-area">
+                                      <div  id="aboutContent" class="md-card-header">
+                                        <div  title="Edit" class="md-headline" style="cursor: pointer;">Hello, my name is {{ profile_info["firstName"] +" " + profile_info["lastName"]}} <!---->
+                                          
+                                        </div> 
+                                        <div title="Edit" class="md-title">{{profile_info["headline"]}}</div>
+                                        <div title="Edit" class="md-subheading-1" style="cursor: pointer;">
+                                          {{profile_info["location"]["name"]}}
+                                        </div>
+                                      </div> 
+                                      <div  class="expandable expandable_visible" title="Edit" style="cursor: pointer;">
+                                        <div  class="md-card-content">
+                                          <div  class="content-with-breaks-summary md-subheading-1 md-subheading-1--contrast">
+                                            {{profile_info["summary"]}}
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div> 
+                                    <div  class="md-card-area">
+                                      <div  class="about-links">
+                                        <button  type="button" class="md-button md-primary about-links__icon md-theme-grey900"> 
+                                          <i  class="md-icon mdi mdi-email-outline"></i>
+                                          <div class="md-ink-ripple">
+                                            <div class="md-ripple" style="width: 64px; height: 64px;">
+                                              
+                                            </div>
+                                          </div>
+                                        </button> 
+                                        <button  type="button" class="md-button md-primary about-links__icon md-theme-grey900"> 
+                                          <i  class="md-icon mdi mdi-phone"></i>
+                                          <div class="md-ink-ripple">
+                                            <div class="md-ripple md-fadeout md-active" style="width: 64px; height: 64px; top: 566px; left: -0.5px;">
+                                              
+                                            </div>
+                                          </div>
+                                        </button> <!----> 
+                                        <button  type="button" class="md-button md-primary about-links__icon md-theme-grey900"> 
+                                          <i  class="md-icon mdi mdi-facebook"></i>
+                                          <div class="md-ink-ripple">
+                                            <div class="md-ripple md-fadeout md-active" style="width: 64px; height: 64px; top: 564px; left: -5.5px;">
+                                              
+                                            </div>
+                                          </div>
+                                        </button>
+                                        <button  type="button" class="md-button md-primary about-links__icon md-theme-grey900">
+                                         <i  class="md-icon mdi mdi-instagram"></i>
+                                         <div class="md-ink-ripple">
+                                          <div class="md-ripple md-fadeout md-active" style="width: 64px; height: 64px; top: 566px; left: -2.5px;">
+                                            
+                                          </div>
+                                        </div>
+                                      </button>
+                                      <button  type="button" class="md-button md-primary about-links__icon md-theme-grey900"> 
+                                        <i  class="md-icon mdi mdi-twitter"></i>
+                                        <div class="md-ink-ripple">
+                                          <div class="md-ripple" style="width: 64px; height: 64px;">
+                                            
+                                          </div>
+                                        </div>
+                                      </button><button  type="button" class="md-button md-primary about-links__icon md-theme-grey900"> 
+                                        <i class="md-icon mdi mdi-link"></i>
+                                        <div class="md-ink-ripple">
+                                          <div class="md-ripple" style="width: 64px; height: 64px;"></div>
+                                        </div>
+                                      </button> 
+                                    </div>
+                                  </div>
+                                </div>
+                              </section> 
+                              <div  class="md-card recommendations ">
+                                <div class="md-card-area">
+                                  <div class="info info__three-xs-two">
+                                    <div  class="stat">
+                                      <span  class="value"><span >0</span>
+                                      <i  aria-hidden="true" class="md-icon md-theme-grey900 material-icons"></i>
+                                    </span> 
+                                    <span  class="label">
+                                      <span >item verified</span>
+                                    </span>
+                                  </div> 
+                                  <div class="stat"><span class="value">0</span> 
+                                    <span class="label"><span>recommendations</span><br>
+                                    <!-- <span><a class="md-primary">VIEW</a></span> -->
+                                  </span></div> 
+                                  <div class="stat">
+                                    <span class="value">
+                                      <span>0</span>
+                                      <i aria-hidden="true" class="md-icon md-theme-grey900 mdi mdi-weight">
+                                      </i>
+                                    </span> 
+                                    <span class="label">total recommendation weight<br></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+
+                                  <div id="jobs-list" class="category-list-container" style="">
+                                    <div class="category-list-container__item">
+                                      <div class="md-layout wrapper">
+                                        <h3 class="md-title category-title">Jobs</h3> 
+                                        <div class="category-list">
+                                          {% for position in profile_info["positions"]["values"] %}
+                                          <div>
+                                            <div class="demo-card-wide mdl-card-wide mdl-shadow--2dp">
+                                            <div class="mdl-card__title">
+                                              <h2 class="mdl-card__title-text">{{position["title"]}}</h2>
+                                            </div>
+                                            <div class="mdl-card__supporting-text">
+                                              <div>{{position["company"]["name"]}}</div>
+                                              <div>{{position["location"]["name"]}}</div>
+<!--                                               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                              Mauris sagittis pellentesque lacus eleifend lacinia...
+  -->                                           </div>
+                                            <div class="mdl-card__actions mdl-card--border">
+                                              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                                {{ position["startDate"]["month"] | string + " - " + position["startDate"]["year"] | string}}
+                                              </a>
+                                            </div>
+                                            <div class="mdl-card__menu">
+                                              <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                                                <i class="material-icons">share</i>
+                                              </button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        {% endfor %}
+<!--                                             <div class="md-card recommendations md-theme-grey900">
+                                              <div class="category-card__container">
+                                                <div class="category-card__content-container">
+                                                  <div class="md-card-content category-card__content">
+                                                    <h2 class="md-title category-card__title">Freelance Web Developer</h2> 
+                                                    <h3 class="md-subheading-1 category-card__subheading-1">MC4</h3>
+                                                  </div>
+                                                </div> 
+                                                <div class="md-card-actions category-card__actions" style="background: rgba(33, 33, 33, 0.06);">
+                                              <p class="md-caption category-card__caption category-card__actions--left">Jan 2016 - Jul 2016<span class="category-card__caption_span-margin">(6 months)</span>
+                                              </p>
+                                              <div class="category-card__actions--right">
+                                                <button type="button" class="md-button md-primary md-theme-grey900"> 
+                                                  <i aria-hidden="true" class="md-icon md-theme-grey900 material-icons">delete</i>
+                                                  <div class="md-ink-ripple">
+                                                    <div class="md-ripple" style="width: 40px; height: 40px;">
+                                                      
+                                                    </div>
+                                                  </div>
+                                                </button> 
+                                                <button type="button" class="md-button md-primary md-theme-grey900"> 
+                                                  <i aria-hidden="true" class="md-icon md-theme-grey900 material-icons">share</i>
+                                                  <div class="md-ink-ripple">
+                                                    <div class="md-ripple" style="width: 40px; height: 40px;">
+                                                      
+                                                    </div>
+                                                  </div>
+                                                </button> 
+                                                <button type="button" class="md-button md-primary md-theme-grey900"> 
+                                                  <i aria-hidden="true" class="md-icon md-theme-grey900 material-icons">mode_edit</i>
+                                                  <div class="md-ink-ripple">
+                                                    <div class="md-ripple" style="width: 40px; height: 40px;">
+                                                      
+                                                    </div>
+                                                  </div>
+                                                </button> 
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+ -->
+                                    </div>
+                                  </div>
+
+                                         
+
+
+
+<script src="js/scroll.js"></script>
+
+</div>
+</body>
+</html>
